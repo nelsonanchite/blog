@@ -12,40 +12,136 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
     <!-- LIBS  -->
-    <link rel="stylesheet" type="text/css" href="css/grid-image.css" />
-    <link rel="stylesheet" type="text/css" href="libs/animate.css"/>
+
     
 
 </head>
-<body>
-
-        <!--Navigation-->
-         
-             <nav class="white" role="navigation">
-                <div class="container">
-                    <div class="nav-wrapper">                      
-                        <a href="#" id="logo-container" class="brand-logo center"><img src="img/logo.png" width="300"></a>
-                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="#intro" class="black-text">Home</a></li>
-                            <li><a href="#work" class="black-text">Quick Tips</a></li>
-                            <li><a href="#galeria" class="black-text">Sobre</a></li>
-                        </ul>
-                        <ul class="side-nav" id="mobile-demo">
-                            <li><a href="#intro">Home</a></li>
-                            <li><a href="#work">Quick Tips</a></li>
-                            <li><a href="#galeria">Sobre</a></li>
-                        </ul>                   
-                    </div>
+<body class="grey lighten-4">
+    
+    <!--Navigation-->
+    <div class="navbar-fixed">
+        <nav class=" blue-grey darken-4" role="navigation">
+            <div class="container">
+                <div class="nav-wrapper">                      
+                    <a href="#" id="logo-container" class="brand-logo"><img src="img/identidade_logo.png" width="80"></a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#intro" class="white-text">Home</a></li>
+                        <li><a href="#work" class="white-text">Quick Tips</a></li>
+                        <li><a href="#galeria" class="white-text">Sobre</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#work">Quick Tips</a></li>
+                        <li><a href="#galeria">Sobre</a></li>
+                    </ul>                   
                 </div>
-            </nav>                     
+            </div>
+        </nav>
+    </div>
+    <!--Logo-->
+    <div class="row">
+        <div class="col s12">
+            <div class="container center">
+                <img class="responsive-img" src="img/logo.png">
+            </div>                                           
+        </div>
+    </div>
+    
+    
+    <!--Posts-->
+    
+    <div class="row">
+        <div class="container">
+            <div class="col l4 s12">            
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/isam.jpg">                        
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">MySQL - MyISAM</span>
+                        <p>Vamos continuar falando um pouco sobre as engines do MySQL</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Confira</a>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col l4 s12">            
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/inno.jpg">                        
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">MySQL - InnoDB</span>
+                        <p>Estaremos falando um pouco sobre as storage engines (motores de amarzenamento) do MySQL...</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Confira</a>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col l4 s12">            
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/sessoes.jpg">                        
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">MATANDO TODAS SESSÕES LOCK</span>
+                        <p>Um pequeno bloco para auxiliar em algumas ocasiões, excluindo todas as sessões em locks que envolvem determinado objeto...</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Confira</a>
+                    </div>
+                  </div> 
+            </div>            
+        </div>        
+    </div>
+    
+         
+    
+    
+    
+    
+    
+    <!--Footer-->
+     <footer class="page-footer blue-grey darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="white-text">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="white-text" href="#!">Link 1</a></li>
+                  <li><a class="white-text" href="#!">Link 2</a></li>
+                  <li><a class="white-text" href="#!">Link 3</a></li>
+                  <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container white-text">
+                Desenvolvido por DBAnchite ©            
+            </div>
+          </div>
+        </footer>
+    
+
+    
+    
+    
 </body>    
 <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="http://materializecss.com/bin/materialize.js"></script>    
      <script type="application/javascript">
         $(document).ready(function(){                      
-            $('.parallax').parallax();                  
+            $('.parallax').parallax(); 
+            $(".button-collapse").sideNav();
         });
                           
     </script>
