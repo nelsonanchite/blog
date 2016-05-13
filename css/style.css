@@ -4,9 +4,35 @@ footer.page-footer {
 }
 
 img.img-logo{
-    margin-top: 7rem;
+    margin-top: 3rem;
+}
+
+img.social{
+    margin-left: 1rem;
+    margin-top: 2rem;
 }
 .block {
     display: none;
 }
 
+nav.navbar-inicio{
+    height: 47rem      
+}
+
+div.post-lateral{
+    position: relative;
+    margin: 0.5rem 0 1rem 0;
+    background-color: cornflowerblue;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+
+hr.estilo{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+div.inicio{
+    height: 47rem      
+}

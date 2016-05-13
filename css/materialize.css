@@ -4260,10 +4260,7 @@ nav .input-field label.active {
   }
   .navbar-fixed {
     height: 64px;
-  }
-  .navbar-inicio{
-    height: 19rem      
-  }
+  }  
 }
 
 @font-face {

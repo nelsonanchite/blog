@@ -11,19 +11,49 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+    
     <!-- LIBS  -->
 
     
 
 </head>
-<body class="grey lighten-4">
+<body class="grey lighten-2">
     
-    <!--Navigation-->
+    
+    <div class="inicio white">
+        <div class="row center">
+            <img src="img/dbanchite_v.png" width="400" class="img-logo">
+            <hr class="estilo">
+            <div class="row">
+                <a href="#">
+                    <img src="img/facebook.png" width="70" class="social">    
+                </a>
+                <a href="#">
+                    <img src="img/twitter.png" width="70" class="social">    
+                </a>
+                <a href="#">
+                    <img src="img/linkedin.png" width="70" class="social">    
+                </a>
+                <a href="#">
+                    <img src="img/github.png" width="70" class="social">    
+                </a>
+            </div>
+                
+        </div>
+        
+    
+    </div>
+    <!--Navigation
     <nav class="white navbar-inicio" role="navigation" id="nav">
         <div class="container">
             <div class="nav-wrapper">                    
-                <a href="#" id="logo-container" class="brand-logo center valign"><img src="img/identidade_logo.png" width="80" class="img-logo"></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <a href="#" id="logo-container" class="brand-logo center valign">
+                    <img src="img/dbanchite_v.png" width="300" class="img-logo">
+                    
+                </a>
+                
+                <a href="#" data-activates="mobile-demo" class="button-collapse blue-text"><i class="material-icons">menu</i></a>
+                
                 <ul class="hide-on-med-and-down">
                     <li><a href="#intro" class="black-text">Home</a></li>
                     <li><a href="#work" class="black-text">Quick Tips</a></li>
@@ -37,18 +67,21 @@
             </div>
         </div>
     </nav>
+-->
     
-    <!--Navigation-->
+    
+    
+    <!--Navigation
     <div class="navbar-fixed">
-        <nav class=" blue-grey darken-4" role="navigation" id="nav2">
+        <nav class="white" role="navigation" id="nav2">
             <div class="container">
                 <div class="nav-wrapper">                      
-                    <a href="#" id="logo-container" class="brand-logo"><img src="img/identidade_logo.png" width="80"></a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <a href="#" id="logo-container" class="brand-logo"><img src="img/dbanchite_h.png" width="61"></a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse blue-text"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="#intro" class="white-text">Home</a></li>
-                        <li><a href="#work" class="white-text">Quick Tips</a></li>
-                        <li><a href="#galeria" class="white-text">Sobre</a></li>
+                        <li><a href="#intro" class="black-text">Home</a></li>
+                        <li><a href="#work" class="black-text">Quick Tips</a></li>
+                        <li><a href="#galeria" class="black-text">Sobre</a></li>
                     </ul>
                     <ul class="side-nav" id="mobile-demo">
                         <li><a href="#intro">Home</a></li>
@@ -58,9 +91,8 @@
                 </div>
             </div>
         </nav>
-    </div>
+    </div>-->
     
-    <!--Logo-->
     <div class="row">
         <div class="col s12">
             <div class="container center">
@@ -70,9 +102,8 @@
         </div>
     </div>
     
-        
     
-     <!--Posts-->
+    <!--Posts-->
     
     <div class="row">
         <div class="container">
@@ -118,23 +149,25 @@
                     </div>
                   </div> 
             </div>  
-        </div   >
-    </div> 
+        </div>  
+    </div>
+
+    
+    
              
         
         
         <!--Footer-->
-     <footer class="page-footer blue-grey darken-4">
+     <footer class="page-footer white">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="white-text">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="black-text">Footer Content</h5>
+                <p class="black-text">You can use rows and columns here to organize your footer content.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
                 <ul>
-                  <li><a class="white-text" href="#!">Link</a></li>
+                  <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
                   <li><a class="white-text" href="#!">Link 2</a></li>
                   <li><a class="white-text" href="#!">Link 3</a></li>
                   <li><a class="white-text" href="#!">Link 4</a></li>
@@ -143,7 +176,7 @@
             </div>
           </div>
           <div class="footer-copyright">
-            <div class="container white-text">
+            <div class="container black-text">
                 Desenvolvido por DBAnchite ©            
             </div>
           </div>
@@ -158,32 +191,20 @@
         $(document).ready(function(){                      
             $('.parallax').parallax(); 
             $(".button-collapse").sideNav();   
-            
+            $( "#nav2" ).hide();            
         });
          
         $(window).scroll(function() {
             posicao = $(window).scrollTop();
-            if(posicao > 170) {
-                /*$( "#nav" ).fadeOut( "slow", function() {
-                    $( "#nav" ).addClass('block');
-                    $( "#nav2" ).removeClass('block');
-                    $( "#nav2" ).fadeIn( "slow", function() { });
-                });*/
-                 $( "nav" ).hide( 2000, function(){
-                    $( "nav2" ).show( 2000 );    
-                 } );
-                 
-                
+            if(posicao > 160) {                
+                 $( "#nav" ).fadeOut( 300, function() {                     
+                     $( "#nav2" ).fadeIn(300)
+                 })                                                                  
             }
-            else {
-                /*$( "#nav" ).fadeIn( "slow", function() { 
-                    $( "#nav2" ).removeClass('block');
-                    $( "#nav" ).addClass('block');
-                    $( "#nav2" ).fadeOut( "slow", function() { });
-                });*/
-                $( "nav2" ).hide( 2000, function(){
-                    $( "nav" ).show( 2000 );    
-                 } );
+            else {                
+                $( "#nav2" ).fadeOut( 300, function() {                    
+                     $( "#nav" ).fadeIn(300)
+                 })
                  
             }
         }); 
