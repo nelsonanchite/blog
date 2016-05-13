@@ -3,6 +3,7 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -4259,6 +4260,9 @@ nav .input-field label.active {
   }
   .navbar-fixed {
     height: 64px;
+  }
+  .navbar-inicio{
+    height: 19rem      
   }
 }
 

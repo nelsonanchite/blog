@@ -3,4 +3,10 @@ footer.page-footer {
     margin-bottom: -22px;
 }
 
+img.img-logo{
+    margin-top: 7rem;
+}
+.block {
+    display: none;
+}
 
