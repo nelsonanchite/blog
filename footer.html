@@ -17,8 +17,28 @@
     
 
 </head>
-<body class="grey lighten-2">
+<body class="grey lighten-2" class="scrollspy">
+           
+    <!--<nav class="white">     
+       <ul id="slide-out" class="side-nav">
+          <li><a href="#!">First Sidebar Link</a></li>
+          <li><a href="#!">Second Sidebar Link</a></li>
+       </ul>
+       <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>          
+    </nav>-->
     
+    <nav class="white" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">                                              
+                <a href="#" data-activates="mobile-demo" class="button-collapse blue-text show-on-large"><i class="material-icons">menu</i></a>                        
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#quick">Quick Tips</a></li>
+                    <li><a href="#treinamento">Treinamentos</a></li>                    
+                </ul>                   
+            </div>
+        </div>
+    </nav>
     
     <div class="inicio white">
         <div class="row center">
@@ -105,7 +125,7 @@
     
     <!--Posts-->
     
-    <div class="row">
+    <div class="row" id="blog">
         <div class="container">
             <div class="col l4 s12">            
                 <div class="card large hoverable">
@@ -191,7 +211,8 @@
         $(document).ready(function(){                      
             $('.parallax').parallax(); 
             $(".button-collapse").sideNav();   
-            $( "#nav2" ).hide();            
+            $( "#nav2" ).hide();      
+            $('.scrollspy').scrollSpy();
         });
          
         $(window).scroll(function() {
