@@ -4,12 +4,12 @@ footer.page-footer {
 }
 
 img.img-logo{
-    margin-top: 3rem;
+    margin-top: 0rem;
 }
 
 img.social{
     margin-left: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .block {
     display: none;
